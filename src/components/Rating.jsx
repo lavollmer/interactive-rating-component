@@ -7,6 +7,10 @@ const Rating = ({ number }) => {
   const [rating, setRating] = useState(number);
   const [isSubmitted, setIsSubmitted] = useState(false); // State to track submission
 
+  const handleRatingClick = () => {
+    setRating(number);
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     if (rating === number) {
@@ -38,11 +42,11 @@ const Rating = ({ number }) => {
             </p>
           </div>
           <div className="flex flex-row justify-evenly items-center justify-center">
-            <ButtonCopy number={1} />
-            <ButtonCopy number={2} />
-            <ButtonCopy number={3} />
-            <ButtonCopy number={4} />
-            <ButtonCopy number={5} />
+            <ButtonCopy number={1} handleRatingClick={number} />
+            <ButtonCopy number={2} handleRatingClick={number} />
+            <ButtonCopy number={3} handleRatingClick={number}/>
+            <ButtonCopy number={4} handleRatingClick={number}/>
+            <ButtonCopy number={5} handleRatingClick={number}/>
           </div>
           <div className="flex flex-row items-center justify-center text-center ">
             <button
