@@ -1,7 +1,6 @@
 import "./App.css";
 import IconStar from "../src/assets/icon-star.svg";
 import Rating from "./components/Rating";
-import Thank from "./components/Thank";
 
 
 function App() {
@@ -26,9 +25,6 @@ function App() {
           </div>
           <div>
             <Rating number={number} />
-          </div>
-          <div>
-            <Thank rating={number} />
           </div>
         </div>
       </div>

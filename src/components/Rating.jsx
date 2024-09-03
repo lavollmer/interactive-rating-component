@@ -8,17 +8,18 @@ const Rating = ({ number }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (rating === "") {
-      alert("Please select a rating!");
+    if (rating === number) {
+      setIsSubmitted(true);
+      setRating(number);
     } else {
-      setIsSubmitted(true); 
+      alert("Please select a rating!");
     }
   };
-  
+
   return (
     <div className="flex flex-col space-y-6">
       {isSubmitted ? (
-        <Thank rating={rating} /> 
+        <Thank rating={number} />
       ) : (
         <>
           <div className="flex flex-row justify-evenly items-center justify-center">
@@ -30,7 +31,7 @@ const Rating = ({ number }) => {
           </div>
           <div className="flex flex-row items-center justify-center text-center ">
             <button
-              onClick={handleSubmit} 
+              onClick={handleSubmit}
               className="bg-white text-dark-blue text-xl font-overpass px-20 py-4 rounded-full hover:bg-orange-700 hover:text-white"
             >
               <p className="font-bold">SUBMIT</p>
