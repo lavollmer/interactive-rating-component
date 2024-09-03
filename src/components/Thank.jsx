@@ -1,12 +1,15 @@
 import React from "react";
 import IllustrationThank from "../assets/illustration-thank-you.svg";
 
-const Thank = () => {
+const Thank = ({rating}) => {
   return (
     <div>
       <div>
         <div>
           <img src={IllustrationThank} alt="illustration-thank-you" />
+        </div>
+        <div>
+            <p>You selected {rating} out of 5</p>
         </div>
         <div>
           <h1 className="text-white text-4xl">Thank you!</h1>
