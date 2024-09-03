@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       <div className="flex flex-col font-overpass bg-black screen">
-        <div className="flex flex-col bg-very-dark-blue rounded-lg p-10 space-y-10 h-100 w-100">
+        <div className="flex flex-col bg-very-dark-blue rounded-lg p-10 space-y-16 h-100 w-100">
           <div className="flex flex-col items-center justify-center bg-dark-blue rounded-full h-8 w-8">
             <img
               src={IconStar}
