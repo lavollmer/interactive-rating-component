@@ -10,6 +10,10 @@ module.exports = {
       fontFamily: {
         overpass: ["Overpass", "sans-serif"],
       },
+      width: {
+        '90': '22.5rem', 
+        '95': '23.75rem',
+      },
     },
   },
   plugins: [],

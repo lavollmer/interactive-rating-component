@@ -18,12 +18,12 @@ const Rating = ({ number }) => {
   };
 
   return (
-    <div className="flex flex-col space-y-6">
+    <div className="flex flex-col space-y-6 bg-very-dark-blue h-80 w-95">
       {isSubmitted ? (
-        <Thank rating={number} />
+        <Thank rating={number} className="bg-very-dark-blue" />
       ) : (
         <>
-         <div className="flex flex-col items-center justify-center bg-dark-blue rounded-full h-8 w-8">
+         <div className="flex flex-col bg-dark-blue text-xl font-bold py-2 px-2 rounded-full h-8 w-8">
             <img
               src={IconStar}
               alt="icon-star"
