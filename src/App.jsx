@@ -6,10 +6,14 @@ function App() {
   const number = "";
   return (
     <>
-      <div className="font-overpass bg-very-dark-blue screen">
-        <div className="flex flex-col bg-dark-blue rounded-lg p-10">
-          <div className="bg-dark-blue rounded-full h-8 w-8">
-            <img src={IconStar} alt="icon-star" className="h-4 w-4" />
+      <div className="flex flex-col font-overpass bg-black screen">
+        <div className="flex flex-col bg-very-dark-blue rounded-lg p-10 space-y-10 h-100 w-100">
+          <div className="flex flex-col items-center justify-center bg-dark-blue rounded-full h-8 w-8">
+            <img
+              src={IconStar}
+              alt="icon-star"
+              className="flex flex-col items-center justify-center h-4 w-4"
+            />
           </div>
           <div>
             <h1 className="text-white text-4xl">How did we do?</h1>
