@@ -1,7 +1,16 @@
 module.exports = {
-    content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
-    theme: {
-      extend: {},
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  theme: {
+    extend: {
+      colors: {
+        "light-grey": "hsl(217, 12%, 63%)",
+        "dark-blue": "hsl(213, 19%, 18%)",
+        "very-dark-blue": "hsl(216, 12%, 8%)",
+      },
+      fontFamily: {
+        overpass: ["Overpass", "sans-serif"],
+      },
     },
-    plugins: [],
-  };
+  },
+  plugins: [],
+};
