@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import ButtonCopy from "./ButtonCopy";
 import Thank from "./Thank";
+import IconStar from "../assets/icon-star.svg";
 
 const Rating = ({ number }) => {
   const [rating, setRating] = useState(number);
@@ -22,6 +23,20 @@ const Rating = ({ number }) => {
         <Thank rating={number} />
       ) : (
         <>
+         <div className="flex flex-col items-center justify-center bg-dark-blue rounded-full h-8 w-8">
+            <img
+              src={IconStar}
+              alt="icon-star"
+              className="flex flex-col items-center justify-center h-4 w-4"
+            />
+          </div>
+          <div>
+            <h1 className="text-white text-4xl">How did we do?</h1>
+            <p className="text-light-grey text-lg">
+              Please let us know how we did with your support request. All
+              feedback is appreciated to help us improve our offering!{" "}
+            </p>
+          </div>
           <div className="flex flex-row justify-evenly items-center justify-center">
             <ButtonCopy number={1} />
             <ButtonCopy number={2} />
