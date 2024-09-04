@@ -7,24 +7,23 @@ const Rating = ({ number }) => {
   const [rating, setRating] = useState(number);
   const [isSubmitted, setIsSubmitted] = useState(false); // State to track submission
 
-  const handleRatingClick = () => {
+  const handleRatingClick = (number) => {
     setRating(number);
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (rating === number) {
-      setIsSubmitted(true);
-      setRating(number);
-    } else {
+    if (rating === null) {
       alert("Please select a rating!");
+    } else {
+      setIsSubmitted(true);
     }
   };
 
   return (
     <div className="flex flex-col space-y-6 bg-very-dark-blue h-80 w-95">
       {isSubmitted ? (
-        <Thank rating={number} className="bg-very-dark-blue" />
+        <Thank rating={rating} className="bg-very-dark-blue" />
       ) : (
         <>
          <div className="flex flex-col bg-dark-blue text-xl font-bold py-2 px-2 rounded-full h-8 w-8">
@@ -42,11 +41,11 @@ const Rating = ({ number }) => {
             </p>
           </div>
           <div className="flex flex-row justify-evenly items-center justify-center">
-            <ButtonCopy number={1} handleRatingClick={number} />
-            <ButtonCopy number={2} handleRatingClick={number} />
-            <ButtonCopy number={3} handleRatingClick={number}/>
-            <ButtonCopy number={4} handleRatingClick={number}/>
-            <ButtonCopy number={5} handleRatingClick={number}/>
+            <ButtonCopy key={number} number={number} onClick={() => handleRatingClick(number)} />
+            <ButtonCopy key={number} number={number} onClick={() => handleRatingClick(number)} />
+            <ButtonCopy key={number} number={number} onClick={() => handleRatingClick(number)}/>
+            <ButtonCopy key={number} number={number} onClick={() => handleRatingClick(number)}/>
+            <ButtonCopy key={number} number={number} onClick={() => handleRatingClick(number)}/>
           </div>
           <div className="flex flex-row items-center justify-center text-center ">
             <button
