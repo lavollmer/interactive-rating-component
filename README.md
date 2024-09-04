@@ -31,9 +31,13 @@ Users should be able to:
 
 ### Screenshots
 
-Desktop Version:
+![Desktop Landing Page](./src/assets/Rating.png)
 
-![Desktop Landing Page](./src/assets/DesktopLandingPage.png)
+
+![Desktop Selected Rating Page](./src/assets/SelectedRating.png)
+
+
+![Desktop Thank You Page](./src/assets/ThankYou.png)
 
 
 ### Links
@@ -67,6 +71,7 @@ I will continue to learn more about TailwindCSS, ReactJS and updating my process
 ### Useful resources
 
 - Google Fonts Overpass(https://fonts.google.com/specimen/Overpass)
+- Render Blocking Resources(https://developer.chrome.com/docs/lighthouse/performance/render-blocking-resources/?utm_source=lighthouse&utm_medium=devtools)
 
 ## Author
 

@@ -2,15 +2,31 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
+    <style>
+      @font-face {
+        font-family: "Overpass";
+        font-style: normal;
+        font-weight: 100;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/overpass/v9/qFdH35WCmI96Ajtm81nGd8E.woff2)
+          format("woff2");
+      }
+      @font-face {
+        font-family: "Overpass";
+        font-style: italic;
+        font-weight: 100;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/overpass/v9/qFdJ35WCmI96Ajtm81nGd8E.woff2)
+          format("woff2");
+      }
+    </style>
+    <meta
+      name="description"
+      content="This application is an interactive rating component built with ReactJS and TailwindCSS. It allows users to select and submit a rating, view responsive layouts for different screen sizes, and see hover states for interactive elements. After submitting a rating, users are presented with a 'Thank you' card."
     />
-    <meta name="description" content="This application is an interactive rating component built with ReactJS and TailwindCSS. It allows users to select and submit a rating, view responsive layouts for different screen sizes, and see hover states for interactive elements. After submitting a rating, users are presented with a 'Thank you' card."/>
     <title>Rating</title>
   </head>
   <body>
