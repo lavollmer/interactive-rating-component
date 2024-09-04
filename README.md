@@ -42,7 +42,7 @@ Users should be able to:
 
 - Live Site URL: [Easybank Landing Page Laura Dev](https://interactive-rating-lauradev.netlify.app/)
 - Github Repo: [Github Repo](https://github.com/lavollmer/interactive-rating-component)
-- Solution URL: [Frontend Mentor Solution]()
+- Solution URL: [Frontend Mentor Solution](https://www.frontendmentor.io/solutions/reactjs-tailwindcss-vite-web-accssibility-interactive-rating-component-BfqaM0_050)
 
 ### My Process
 
