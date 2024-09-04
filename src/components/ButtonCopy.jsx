@@ -1,6 +1,6 @@
 import React from "react";
 
-const ButtonCopy = ({ number, onClick }) => {
+const ButtonCopy = ({ number,isSelected, onClick }) => {
   return (
     <button
       onClick={onClick}
