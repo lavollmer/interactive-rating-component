@@ -26,7 +26,7 @@ const Rating = ({ number }) => {
         <Thank rating={rating} className="bg-very-dark-blue" />
       ) : (
         <>
-         <div className="flex flex-col bg-dark-blue text-xl font-bold py-2 px-2 rounded-full h-8 w-8">
+          <div className="flex flex-col bg-dark-blue text-xl font-bold py-2 px-2 rounded-full h-8 w-8">
             <img
               src={IconStar}
               alt="icon-star"
@@ -41,11 +41,14 @@ const Rating = ({ number }) => {
             </p>
           </div>
           <div className="flex flex-row justify-evenly items-center justify-center">
-            <ButtonCopy key={number} number={number} onClick={() => handleRatingClick(number)} />
-            <ButtonCopy key={number} number={number} onClick={() => handleRatingClick(number)} />
-            <ButtonCopy key={number} number={number} onClick={() => handleRatingClick(number)}/>
-            <ButtonCopy key={number} number={number} onClick={() => handleRatingClick(number)}/>
-            <ButtonCopy key={number} number={number} onClick={() => handleRatingClick(number)}/>
+            {[1, 2, 3, 4, 5].map((number) => (
+              <ButtonCopy
+                key={number}
+                number={number}
+                isSelected={rating === number}
+                onClick={() => handleRatingClick(number)}
+              />
+            ))}
           </div>
           <div className="flex flex-row items-center justify-center text-center ">
             <button
