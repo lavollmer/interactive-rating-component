@@ -1,6 +1,6 @@
 # Interactive Rating Component
 
-This project entailed creating the Interactive Rating Component with both mobile and web responsive designs. Key features include 
+This project entailed creating the Interactive Rating Component with both mobile and web responsive designs. Key features include useState hook, reusable components, rating selection, and separate confirmation component.
 
 
 ## Table of contents
@@ -18,7 +18,7 @@ This project entailed creating the Interactive Rating Component with both mobile
 
 ## Overview
 
-This project involved replicating a design layout given for desktop and mobile for a Bookmark Landing Page with special features.
+This project involved replicating a design layout given for desktop and mobile for a Interactive Rating component with special features.
 
 ### The challenge
 
@@ -39,7 +39,7 @@ Desktop Version:
 ### Links
 
 - Solution URL: [Frontend Mentor Solution]()
-- Live Site URL: [Easybank Landing Page Laura Dev]()
+- Live Site URL: [Easybank Landing Page Laura Dev](https://interactive-rating-lauradev.netlify.app/)
 
 ### My Process
 
@@ -70,6 +70,6 @@ I will continue to learn more about TailwindCSS, ReactJS and updating my process
 
 ## Author
 
-- Website - [Laura V](www.lauradeveloper.com)
-- Frontend Mentor - [@lavollmer](https://www.frontendmentor.io/profile/yourusername)
+- Website - [Laura V](lauradeveloper.com)
+- Frontend Mentor - [@lavollmer](https://www.frontendmentor.io/profile/lavollmer)
 - Github - [@lavollmer](https://github.com/lavollmer)

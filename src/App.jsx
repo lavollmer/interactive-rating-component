@@ -1,7 +1,5 @@
 import "./App.css";
-
 import Rating from "./components/Rating";
-
 
 function App() {
   const number = "";

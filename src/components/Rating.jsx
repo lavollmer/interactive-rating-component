@@ -5,7 +5,7 @@ import IconStar from "../assets/icon-star.svg";
 
 const Rating = ({ number }) => {
   const [rating, setRating] = useState(number);
-  const [isSubmitted, setIsSubmitted] = useState(false); // State to track submission
+  const [isSubmitted, setIsSubmitted] = useState(false);
 
   const handleRatingClick = (number) => {
     setRating(number);
