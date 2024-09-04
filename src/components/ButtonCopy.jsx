@@ -1,7 +1,8 @@
 import React from "react";
 
-const ButtonCopy = ({ number,isSelected, onClick }) => {
+const ButtonCopy = ({ number, isSelected, onClick }) => {
   return (
+    // based on isSelected state --> will display the button in orange if selected, dark blue if not selected
     <button
       onClick={onClick}
       className={`${
