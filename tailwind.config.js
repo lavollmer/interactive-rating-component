@@ -6,6 +6,8 @@ module.exports = {
         "light-grey": "hsl(217, 12%, 63%)",
         "dark-blue": "hsl(213, 19%, 18%)",
         "very-dark-blue": "hsl(216, 12%, 8%)",
+        'gunmetal': '#2C2C2C',
+        'raisin-black': '#1E1E1E',
       },
       fontFamily: {
         overpass: ["Overpass", "sans-serif"],

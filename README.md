@@ -40,8 +40,9 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Frontend Mentor Solution]()
 - Live Site URL: [Easybank Landing Page Laura Dev](https://interactive-rating-lauradev.netlify.app/)
+- Github Repo: [Github Repo](https://github.com/lavollmer/interactive-rating-component)
+- Solution URL: [Frontend Mentor Solution]()
 
 ### My Process
 
@@ -54,6 +55,8 @@ When the end user selects a number rating, it triggers a handleRatingClick which
 Additionally, I updated the index.html with the Google Fonts link, a meta description and a new icon to display. I ran a Lighthouse report to show that I had 100s in SEO, Best Pratices, and accessibility. I had a 99 rating in performance which I was satisfied with.
 
 Overall, this project challenged my knowledge of props management, useState management, tailwindCSS styling based on dynamic information and ReactJS component structure. I enjoyed working on this project and I think it turned out well!
+
+After submitting my design to Frontend Mentor, I refined my design with specific details and color. I updated the background and button colors to match more closely to the design. Additionally, I elongated the SUBMIT button as well as made the background color orange. I spaced the rating number buttons from evenly to justify-between to have more space between them. Overall, these improvements added more asthetics to the design.
 
 ### Built with
 

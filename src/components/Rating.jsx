@@ -22,26 +22,26 @@ const Rating = ({ number }) => {
   };
 
   return (
-    <div className="flex flex-col space-y-6 bg-very-dark-blue h-80 w-95">
+    <div className="flex flex-col space-y-6 bg-raisin-black h-80 w-95">
       {isSubmitted ? (
-        <Thank rating={rating} className="bg-very-dark-blue" />
+        <Thank rating={rating} className="bg-raisin-black" />
       ) : (
         <>
-          <div className="flex flex-col bg-dark-blue text-xl font-bold py-2 px-2 rounded-full h-8 w-8">
+          <div className="flex flex-col bg-gunmetal text-xl font-bold py-2 px-2 rounded-full h-8 w-8">
             <img
               src={IconStar}
               alt="icon-star"
               className="flex flex-col items-center justify-center h-4 w-4"
             />
           </div>
-          <div>
-            <h1 className="text-white text-4xl">How did we do?</h1>
+          <div className="flex flex-col space-y-4">
+            <h1 className="text-white text-2xl">How did we do?</h1>
             <p className="text-light-grey text-lg">
               Please let us know how we did with your support request. All
               feedback is appreciated to help us improve our offering!{" "}
             </p>
           </div>
-          <div className="flex flex-row justify-evenly items-center justify-center">
+          <div className="flex flex-row justify-between items-center justify-center w-full">
             {/* mapping over an array of numbers - each number returns the button copy component */}
             {[1, 2, 3, 4, 5].map((number) => (
               // ButtonCopy includes props --> the key prop to identify each unique element, the number prop to display the numberm the isSelected checks the current number is equal to the rating state, the onClick prop calls the handleRatingClick with the current number
@@ -57,9 +57,9 @@ const Rating = ({ number }) => {
             {/* handleSubmit function to submit the rating and update the state to display the Thank You component */}
             <button
               onClick={handleSubmit}
-              className="bg-white text-dark-blue text-xl font-overpass px-20 py-4 rounded-full hover:bg-orange-700 hover:text-white"
+              className="text-xl font-overpass px-36 py-2 rounded-full bg-orange-700 text-white font-bold"
             >
-              <p className="font-bold">SUBMIT</p>
+              SUBMIT
             </button>
           </div>
         </>
